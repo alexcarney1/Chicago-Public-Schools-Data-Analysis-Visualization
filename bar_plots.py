@@ -55,8 +55,8 @@ def plot(df):
     plt.xticks(n + width / 2, environment_score_series.index, fontsize =10)
     
     plt.legend(loc='best')
-    plt.ylabel("Score")
-    plt.title("Environment and Safety Score by School Network", fontsize =10)    
+    plt.ylabel("Score", fontsize = 15)
+    plt.title("Environment and Safety Score by School Network", fontsize =20)    
     fig.autofmt_xdate() 
     plt.show()
 
