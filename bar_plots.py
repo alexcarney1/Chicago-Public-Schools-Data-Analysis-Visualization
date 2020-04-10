@@ -46,12 +46,13 @@ def plot(df):
     
     #plot setup
     fig, ax = plt.subplots()
+    fig.set_size_inches(15, 15)
     ax.set_ylim(0,100)
     n = np.arange(len(environment_score_series.values))
     width = 0.35
     plt.bar(n, environment_score_series.values,width, label = 'Environment Score', color = 'indianred')
     plt.bar(n + width, safety_score_series.values,width, label = 'Safety Score', color = 'cornflowerblue')
-    plt.xticks(n + width / 2, environment_score_series.index, fontsize =8)
+    plt.xticks(n + width / 2, environment_score_series.index, fontsize =10)
     
     plt.legend(loc='best')
     plt.ylabel("Score")
